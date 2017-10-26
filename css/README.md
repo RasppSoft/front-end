@@ -1,3 +1,3 @@
-# Front-End
+# CSS
 
-Estrutura front-end do projeto RU Ca$h
+Estrutura de pastas dos CSS do projeto RU Ca$h
