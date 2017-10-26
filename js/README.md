@@ -1,3 +1,3 @@
-# Front-End
+# JavaScript
 
-Estrutura front-end do projeto RU Ca$h
+Estrutura de pastas para organição dos JavaScript do projeto RU Ca$h
