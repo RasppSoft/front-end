@@ -1,3 +1,3 @@
-# Front-End
+# Assets
 
-Estrutura front-end do projeto RU Ca$h
+Estrutura de pastas dos Assets do projeto RU Ca$h
