@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>RUCash - Login</title>
+		<link rel="icon" href="assets/images/logo.png"/>
+		<link rel="stylesheet" href="css/style.css">
+		<meta name="keywords" content="rucash, carteira, restaurante universitario, bandejao">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="description" content="Carteira universitária online">
+		<meta name="publisher" content="RUCash">
+		<meta name="author" content="RasppSoft Inc.">
+		<meta name="robots" content="index,follow">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!-- header -->
+		<header>
+			<nav class="navbar navbar-default navbar-fixed-top">
+			  <div class="container">
+				<div class="navbar-header">
+				  <a class="navbar-brand" href="#"><img src="assets/images/logo.png" class="logotop" alt="RUCash logo"> RU Ca$h</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+				  <ul class="nav navbar-nav">
+					<li class="active"><a href="login.html">Login</a></li>
+					<li><a href="signUp.html">Cadastrar</a></li>
+					<li><a href="addCredits.html">Adicionar Créditos</a></li>
+					<li><a href="history.html">Histórico</a></li>
+					<li><a href="products.html">Produtos</a></li>
+					<li><a href="userData.html">Dados do Usuário</a></li>
+				  </ul>
+				</div>
+			  </div>
+			</nav>
+		</header>
+
+		<!--- content -->
+		<div class="box-parent-login">
+			<div class="well bg-white box-login">
+				<img class="ls-login-logo" src="assets/images/logo.png" alt="RUCash logo">
+				<form role="form" method="get" action="userData.html">
+					<fieldset>
+
+						<div class="form-group ls-login-user">
+							<label for="userLogin">ID</label>
+							<input class="form-control ls-login-bg-user input-lg" id="userLogin" type="text" aria-label="ID" placeholder="ID">
+						</div>
+
+						<div class="form-group ls-login-password">
+							<label for="userPassword">Senha</label>
+							<input class="form-control ls-login-bg-password input-lg" id="userPassword" type="password" aria-label="Senha" placeholder="Senha">
+						</div>
+
+						<button type="submit" class="btn btn-success btn-lg btn-block pull-right">
+							<span class="glyphicon glyphicon-log-in"></span>
+							Entrar
+						</button>
+						<p class="txt-center ls-login-signup">Ainda não é usuário do RUCash?
+							<a href="signUp.html">Cadastre-se agora</a>
+						</p>
+
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<!-- footer -->
+		<footer>
+			<nav class="navbar navbar-default navbar-fixed-bottom footer">
+				<p>Sistema de carteira universitária online RUCash</p>
+			</nav>
+		</footer>
+	</body>
+</html>

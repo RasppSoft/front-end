@@ -1,0 +1,109 @@
+html {
+	height: 100%;
+	padding-top: 55px;
+}
+
+.header{
+	text-align: center;
+	background-color: grey;
+	width: 100%;
+	color: white;
+}
+
+.footer{
+	text-align: center;
+	padding-top: 10px;
+	background-color: grey !important;
+	width: 100%;
+	color: white;
+}
+
+.logotop{
+	float: left;
+	margin-right: 8px;
+	width: 25px;
+	height: 25px;
+	text-decoration: none;
+}
+
+#logo-menu{
+	margin-top: -5px;
+	width: 15%;
+}
+
+.ls-login-logo{
+	margin-top: 20px;
+	width: 15%;
+	height: 15%;
+	margin-bottom: 30px;
+}
+
+.box-login{
+	margin-top: 10%;
+	margin-left: 25%;
+	margin-right: 25%;
+	border: 1px solid green;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn{
+	margin-top: 30px;
+}
+
+.obrigatorio{
+    color:red;
+}
+
+h4 {
+	margin-left: 10px;
+}
+
+.help-block{
+	margin-left: 10px;
+}
+
+.ls-login-logo{
+	margin-top: 20px;
+	width: 8%;
+	height: 8%;
+	margin-bottom: 30px;
+}
+
+.box-logo{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.panel-heading{
+    font-size:150%;
+}
+
+.flex-row{
+	margin-top: 30px;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#list_products .thumbnail{ 
+	min-height: 260px;
+	width: 150px;
+}
+
+
+#list_products .thumbnail .box-img img{
+	max-width: 95%; 
+	margin: 0 auto;
+}

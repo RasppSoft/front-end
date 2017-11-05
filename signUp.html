@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>RUCash - Cadastro de Usuário</title>
+		<link rel="icon" href="assets/images/logo.png"/>
+		<link rel="stylesheet" href="css/style.css">
+		<meta name="keywords" content="rucash, carteira, restaurante universitario, bandejao">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="description" content="Carteira universitária online">
+		<meta name="publisher" content="RUCash">
+		<meta name="author" content="RasppSoft Inc.">
+		<meta name="robots" content="index,follow">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!-- header -->
+		<header>
+			<nav class="navbar navbar-default navbar-fixed-top">
+			  <div class="container">
+				<div class="navbar-header">
+				  <a class="navbar-brand" href="#"><img src="assets/images/logo.png" class="logotop" alt="RUCash logo"> RU Ca$h</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+				  <ul class="nav navbar-nav">
+					<li><a href="login.html">Login</a></li>
+					<li class="active"><a href="signUp.html">Cadastrar</a></li>
+					<li><a href="addCredits.html">Adicionar Créditos</a></li>
+					<li><a href="history.html">Histórico</a></li>
+					<li><a href="products.html">Produtos</a></li>
+					<li><a href="userData.html">Dados do Usuário</a></li>
+				  </ul>
+				</div>
+			  </div>
+			</nav>
+		</header>
+		
+		<!-- content -->
+		<div class="container bg-white">
+			<form class="form-horizontal" role="form" method="get" action="userData.html">
+				<fieldset>
+					<div class="panel panel-primary">
+						<div class="panel-heading">Cadastro de Usuário</div>
+						<div class="panel-body">
+							<div class="row">
+							    <p class="help-block"><span class="obrigatorio">*</span> Campo Obrigatório </p>
+							</div>
+							<div class="row">
+						        <div class="col-md-8 col-sm-8 col-xs-12">
+						        	<label class="control-label" for="Nome">Nome <span class="obrigatorio">*</span></label>
+						        	<input id="Nome" name="Nome" placeholder="Digite seu nome" class="form-control input-md" required="" type="text">
+						        </div>
+						        <div class="col-md-4 col-sm-4 col-xs-12">
+						        	<label class="control-label" for="dtnasc">Data de nascimento <span class="obrigatorio">*</span></label>
+						        	<input type="date" id="dtnasc" name="dtnasc" class="form-control input-md" required="">
+						        </div>
+						    </div>
+						    <div class="row">
+						        <div class="col-md-6 col-sm-6 col-xs-12">
+						        	<label class="control-label" for="telefone">Telefone <span class="obrigatorio">*</span></label>
+						        	<div class="input-group">
+								        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+								        <input id="telefone" name="telefone" class="form-control" required="" type="tel">
+								    </div>
+						        </div>
+						        <div class="col-md-6 col-sm-6 col-xs-12">
+						        	<label class="control-label" for="email">E-mail <span class="obrigatorio">*</span></label>
+						        	<div class="input-group">
+								        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+								        <input id="email" name="email" class="form-control" required="" type="email">
+								    </div>
+						        </div>
+						    </div>
+						    <div class="row">
+						        <div class="col-md-6 col-sm-6 col-xs-12">
+						        	<label class="control-label" for="userId">ID <span class="obrigatorio">*</span></label>
+						        	<input id="userId" name="userId" class="form-control input-md" required="" type="text" placeholder="Crie seu ID">
+						        </div>
+						        <div class="col-md-6 col-sm-6 col-xs-12">
+						        	<label class="control-label" for="userPass">Senha <span class="obrigatorio">*</span></label>
+						   		  	<input class="form-control" id="userPass" name="userPass" type="password" aria-label="Crie sua senha" placeholder="Crie sua senha">
+						        </div>
+						    </div>
+
+						    <br>
+						    <h4>Cadastro de Cartão de Crédito</h4>
+						    <div class="row">
+						        <div class="col-md-8 col-sm-8 col-xs-12">
+						        	<label class="control-label" for="cardNumber">Número do cartão </label>
+						        	<input id="cardNumer" name="cardNumber" class="form-control input-md" type="number" maxlength="16">
+						        </div>
+						    	<div class="col-md-5 col-sm-5 col-xs-12">
+						    		<label class="control-label" for="cardNumberSec">CVV - Código de segurança </label>
+						    		<input id="cardNumerSec" name="cardNumberSec" class="form-control input-md" type="number" maxlength="3">
+						    	</div>
+						        <div class="col-md-3 col-sm-3 col-xs-12">
+						        	<label class="control-label" for="cardNumberVal">Mês/ano de validade </label>
+						        	<input id="cardNumerVal" name="cardNumberVal" class="form-control input-md" type="text">
+						        </div>
+						        <div class="col-md-4 col-sm-4 col-xs-12">
+						        	<label class="ccontrol-label" for="bandeira">Bandeira</label>
+						        	<select id="bandeira" name="bandeira" class="form-control">
+									    <option value=""></option>
+										<option value="visa">Visa</option>
+										<option value="master">MasterCard</option>
+										<option value="american">American Express</option>
+									    <option value="outra">Outra</option>
+								    </select>
+						        </div>
+						    </div>
+						    <div class="flex-row">
+								<div class="col-sm-6 col-xs-12">
+									<button type="reset" class="btn btn-danger btn-lg center-block" onclick="javascript:location.href='login.html'">
+									<span class="glyphicon glyphicon-remove"></span>
+									Cancelar
+									</button>
+								</div>
+								<div class="col-sm-6 col-xs-12">
+									<button type="submit" class="btn btn-success btn-lg center-block">
+									<span class="glyphicon glyphicon-ok"></span>
+									Cadastrar
+									</button>
+								</div>
+						    </div>
+						</div>
+					</div>
+				</fieldset>
+		    </form>
+		</div>
+
+		<!-- footer -->
+		<footer>
+			<nav class="navbar navbar-default navbar-fixed-bottom footer">
+				<p>Sistema de carteira universitária online RUCash</p>
+			</nav>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>RUCash - Dados do Usuário</title>
+		<link rel="icon" href="assets/images/logo.png"/>
+		<link rel="stylesheet" href="css/style.css">
+		<meta name="keywords" content="rucash, carteira, restaurante universitario, bandejao">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="description" content="Carteira universitária online">
+		<meta name="publisher" content="RUCash">
+		<meta name="author" content="RasppSoft Inc.">
+		<meta name="robots" content="index,follow">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!-- header -->
+		<header>
+			<nav class="navbar navbar-default navbar-fixed-top">
+			  <div class="container">
+				<div class="navbar-header">
+				  <a class="navbar-brand" href="#"><img src="assets/images/logo.png" class="logotop" alt="RUCash logo"> RU Ca$h</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+				  <ul class="nav navbar-nav">
+					<li><a href="login.html">Login</a></li>
+					<li><a href="signUp.html">Cadastrar</a></li>
+					<li><a href="addCredits.html">Adicionar Créditos</a></li>
+					<li><a href="history.html">Histórico</a></li>
+					<li><a href="products.html">Produtos</a></li>
+					<li class="active"><a href="userData.html">Dados do Usuário</a></li>
+				  </ul>
+				  <ul class="nav navbar-nav navbar-right">
+					<li><a href="login.html"><span class="glyphicon glyphicon-log-out"></span> Sair</a></li>
+				  </ul>
+				</div>
+			  </div>
+			</nav>
+		</header>
+
+		<!-- content -->
+		<section class="container-fluid">
+			<div class="flex-row">
+				<div class="col-md-8 col-sm-8 col-xs-12">
+					<h3>Dados do usuário</h3>
+					<br>
+					<h4>ID: user-rucash</h4>
+					<h4>Nome: RUCash Nombre</h4>
+					<br>
+					<h5>Data de nascimento: 01/01/1990</h5>
+					<h5>Telefone: (43) 99876-3210</h5>
+					<h5>E-mail: contato@rucash.com</h5>
+					<br>
+
+					<button type="submit" class="btn btn-primary btn-lg center-block">
+						<span class="glyphicon glyphicon-pencil"></span>
+						Editar
+					</button>
+				</div>
+
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<h3>Histórico resumido</h3>
+					<br>
+					<ul>
+						<li>Produto: <a href="">Refeição</a>
+							<br>
+							Preço: R$ 3,50
+							<br>
+							Comprado em: 03/11/2017
+							<br>
+						</li>
+						<br>
+						<li>Produto: <a href="">Coca-cola lata</a>
+							<br>
+							Preço: R$ 3,50
+							<br>
+							Comprado em: 03/11/2017
+							<br>
+						</li>
+						<br>
+						<li>Produto: <a href="">Coxinha recheada</a>
+							<br>
+							Preço: R$ 3,50
+							<br>
+							Comprado em: 03/11/2017
+							<br>
+						</li>
+						<br>
+					</ul>
+					<button type="submit" class="btn btn-primary btn-lg center-block" onclick="javascript:location.href='history.html'">
+						<span class="glyphicon glyphicon-list-alt"></span>
+						Histórico completo
+					</button>
+					<br>
+				</div>
+			</div>
+		</section>
+
+		<!-- footer -->
+		<footer>
+			<nav class="navbar navbar-default navbar-fixed-bottom footer">
+				<p>Sistema de carteira universitária online RUCash</p>
+			</nav>
+		</footer>
+	</body>
+</html>

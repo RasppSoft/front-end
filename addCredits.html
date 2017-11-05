@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>RUCash - Adicione créditos a carteira</title>
+		<link rel="icon" href="assets/images/logo.png"/>
+		<link rel="stylesheet" href="css/style.css">
+		<meta name="keywords" content="rucash, carteira, restaurante universitario, bandejao">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="description" content="Carteira universitária online">
+		<meta name="publisher" content="RUCash">
+		<meta name="author" content="RasppSoft Inc.">
+		<meta name="robots" content="index,follow">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/adicionar.js"></script>
+		
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!-- header -->
+		<header>
+			<nav class="navbar navbar-default navbar-fixed-top">
+			  <div class="container">
+				<div class="navbar-header">
+				  <a class="navbar-brand" href="#"><img src="assets/images/logo.png" class="logotop" alt="RUCash logo"> RU Ca$h</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+				  <ul class="nav navbar-nav">
+					<li><a href="login.html">Login</a></li>
+					<li><a href="signUp.html">Cadastrar</a></li>
+					<li class="active"><a href="addCredits.html">Adicionar Créditos</a></li>
+					<li><a href="history.html">Histórico</a></li>
+					<li><a href="products.html">Produtos</a></li>
+					<li><a href="userData.html">Dados do Usuário</a></li>
+				  </ul>
+				  <ul class="nav navbar-nav navbar-right">
+					<li><a href="login.html"><span class="glyphicon glyphicon-log-out"></span> Sair</a></li>
+				  </ul>
+				</div>
+			  </div>
+			</nav>
+		</header>
+		
+		<!-- content -->
+		<section class="container-fluid">
+			<div class="flex-row">
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<h3>Valor a ser adicionado na carteira:</h3>
+					<br>
+					<form id="adicionarValor" onsubmit="javascript:return false;">
+						<div>
+						    <input type="radio" id="valor10" name="valor" value="10">
+						    <label for="valor10">R$ 10,00</label>
+						</div>
+						
+						<div>
+						    <input type="radio" id="valor20" name="valor" value="20">
+						    <label for="valor20">R$ 20,00</label>
+						</div>
+
+						<div>
+						    <input type="radio" id="valor30" name="valor" value="30">
+						    <label for="valor30">R$ 30,00</label>
+						</div>
+						
+						<br/>
+						
+						<h4>Total: R$ <span id="valor">0</span>,00</h4>
+						
+						<br/>
+						
+						<button type="submit" class="btn btn-primary btn-lg center-block" onclick="javascript:adicionaValor()">
+							<span class="glyphicon glyphicon-plus-sign"></span>
+							Adicionar
+						</button>
+						
+						<br/>
+
+					</form>
+				</div>
+
+				<div class="col-md-8 col-sm-8 col-xs-12">
+					<h3>Carrinho de compras:</h3>
+					
+					<br/>
+
+					<div id="list" class="row">
+						<div class="table-responsive col-md-12">
+							<table class="table table-striped" cellspacing="0" cellpadding="0">
+								<thead>
+									<tr>
+										<th>Valor</th>
+										<th>Quantidade</th>
+									</tr>
+								</thead>
+								<tbody id="itens_compra">
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<br/>
+
+					<h4>TOTAL PARA ADICIONAR A CARTEIRA: R$ <span id="valor2">0</span>,00</h4>
+					
+					<br/>
+					
+					<label class="control-label" for="pagarCom">Pagar com:</label>
+					
+					<div class="row">
+						<div class="col-sm-6 col-xs-12">
+							<label required="" class="radio-inline" for="pagarCom-0" >
+						      <input name="pagamento" id="pagamento" value="boleto" type="radio" required>
+						      BOLETO
+						    </label>
+						</div>
+
+						<div class="col-sm-6 col-xs-12">
+						    <label required="" class="radio-inline" for="pagarCom-1" >
+							    <input name="pagamento" id="pagamento" value="cartao" type="radio" required>
+							    CARTÃO DE CRÉDITO
+						    </label>
+						</div>
+					</div>
+					
+					<br/>
+					
+					<div class="row">
+						<div class="col-sm-6 col-xs-12">
+							<button type="" class="btn btn-danger btn-lg center-block" onclick="javascript:location.href='userData.html'">
+							<span class="glyphicon glyphicon-remove"></span>
+							Cancelar
+							</button>
+						</div>
+
+						<div class="col-sm-6 col-xs-12">
+							<button type="submit" class="btn btn-success btn-lg center-block">
+								<span class="glyphicon glyphicon-ok"></span>
+								Comprar
+							</button>
+						</div>
+					</div>
+
+					<br/>
+				</div>
+			</div>
+		</section>
+
+		<!-- footer -->
+		<footer>
+			<nav class="navbar navbar-default navbar-fixed-bottom footer">
+				<p>Sistema de carteira universitária online RUCash</p>
+			</nav>
+		</footer>
+	</body>
+</html>
